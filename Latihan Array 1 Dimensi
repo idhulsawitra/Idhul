@@ -1,0 +1,23 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int minyak[5];
+    int hasil=0;
+    for(int i=0; i<5; i++)
+        {
+            cout << "Input Cergen ke-" << (i + 1 ) << ":";
+            cin >> minyak[i];
+        }
+     cout << "Nilai Minyak yang Anda masukkan ..." << endl;
+     for(int i=0; i<5; i++)
+        {
+            hasil+= minyak[i];
+            cout << "\nCergen ke-" << (i + 1) << " adalah " << minyak[i] << " Liter";
+        }
+     cout << "\nTotal Minyak setiap Cergen ..." << endl << endl;
+     cout << hasil << " Liter";
+    return 0;
+}
